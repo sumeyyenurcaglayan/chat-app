@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login-texts {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 20rem;
+  margin: 20rem auto;
+}
+#btn {
+  background-color: #68b7ff;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  width: 21.5rem;
+}
+
+#textUserName {
+  background-color: #efefef;
+  border: none;
+}
+
+#textFirstName {
+  background-color: #efefef;
+  border: none;
+}
+
+#textLastName {
+  background-color: #efefef;
+  border: none;
+}
+
+.login-text {
+  margin-top: 0.6rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.login-text:focus {
+  outline: none;
+}
