@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Chat from "./pages/Chat";
 import UserDetails from "./pages/UserDetails/UserDetails";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function Routes() {
   return (
