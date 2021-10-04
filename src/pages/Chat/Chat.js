@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState } from "react";
 import "./Chat.css";
 import SearchInput from "./components/SearchInput";
 import Settings from "./components/Settings";
@@ -6,7 +6,7 @@ import UserHeader from "./components/UserHeader";
 import UserList from "./components/UserList";
 import MessageInput from "./components/MessageInput";
 import Messages from "./components/Messages";
-import { Redirect, useParams } from "react-router";
+import { Redirect } from "react-router";
 
 function Chat() {
   const [searchText, setSearchText] = useState("");
