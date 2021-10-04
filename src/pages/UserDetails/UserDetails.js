@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Chat/Chat.css";
 import { FaRegMoon } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";

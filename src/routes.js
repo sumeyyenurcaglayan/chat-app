@@ -1,19 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
-
-import useLogin from "./hooks/useLogin";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Chat from "./pages/Chat";
 import UserDetails from "./pages/UserDetails/UserDetails";
 
 function Routes() {
-  const { user } = useLogin();
-
   return (
     <Router>
       <Switch>
