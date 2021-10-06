@@ -6,11 +6,11 @@ export default function Messages() {
   const { selectedUser } = React.useContext(UserContext);
 
   return (
-    <div className="messages right-side-messages">
+    <div className="messages left-side-messages">
       {selectedUser
         ? selectedUser.messages.map((message) => {
             return (
-              <div className="right-side-message">
+              <div className="left-side-message">
                 <p>{message.text}</p>
               </div>
             );

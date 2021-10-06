@@ -1,7 +1,7 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { UserContext } from "../../../context/login";
 
-import { useHistory } from "react-router-dom";
 export default function UserList(props) {
   const { userList, selectUser } = React.useContext(UserContext);
   let history = useHistory();
@@ -34,7 +34,7 @@ export default function UserList(props) {
                 width: "50px",
                 height: "50px",
                 borderRadius: "50px",
-                backgroundColor: "chat-search-text",
+                backgroundColor: "gainsboro",
               }}
             ></div>
             <div className="messages">
@@ -43,10 +43,7 @@ export default function UserList(props) {
                 {`${item.first_name} ${item.last_name}`}
               </p>
 
-              <p
-                className="text"
-                style={{ marginLeft: "1rem", color: "#C8C8C8" }}
-              >
+              <p className="text" style={{ marginLeft: "1rem" }}>
                 {" "}
                 {`${lastMessage.slice(0, 25)} ...`}
               </p>

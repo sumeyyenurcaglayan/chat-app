@@ -1,67 +1,30 @@
-import React from "react";
-import "../Chat/Chat.css";
-import { FaRegMoon } from "react-icons/fa";
-import { FaSignOutAlt } from "react-icons/fa";
-import { BsCameraVideo } from "react-icons/bs";
-import { AiOutlinePhone } from "react-icons/ai";
-import { AiOutlineMessage } from "react-icons/ai";
+import React, { useState } from "react";
+import "./UserDetails.css";
+import Blocks from "./components/Blocks";
+import SearchInput from "./components/SearchInput";
+import Settings from "./components/Settings";
+import UserList from "./components/UserList";
+import UserHeader from "./components/UserHeader";
+import { Redirect } from "react-router";
 
-function User() {
+function UserDetails() {
+  const [searchText, setSearchText] = useState("");
+  if (localStorage.getItem("username") == null) {
+    return <Redirect to="/login"></Redirect>;
+  }
   return (
-    <div className="container">
-      <div className="left-side">
-        <form id="form" role="search">
-          <input
-            type="search"
-            id="query"
-            name="q"
-            placeholder="Search..."
-            aria-label="Search through site content"
-          />
-          <button>Search</button>
-        </form>
-        <div className="left-side-item user-list">User List</div>
-        <hr />
-
-        <div className="left-side-item settings">
-          <FaRegMoon style={{ width: "60px", height: "60px" }} />
-          <FaSignOutAlt style={{ width: "60px", height: "60px" }} />
-        </div>
+    <div className="details-chat-container">
+      <div className="details-left-side">
+        <SearchInput value={searchText} onChange={setSearchText} />
+        <UserList searchText={searchText} />
+        <Settings />
       </div>
-      <div className="right-side">
-        <div className="header"></div>
-        <div className=" block">
-          <BsCameraVideo
-            style={{
-              width: "60px",
-              height: "60px",
-              color: "blue",
-              backgroundColor: "white",
-              margin: "25px",
-            }}
-          />
-          <AiOutlinePhone
-            style={{
-              width: "60px",
-              height: "60px",
-              color: "blue",
-              backgroundColor: "white",
-              margin: "25px",
-            }}
-          />
-          <AiOutlineMessage
-            style={{
-              width: "60px",
-              height: "60px",
-              color: "blue",
-              backgroundColor: "white",
-              margin: "25px",
-            }}
-          />
-        </div>
+      <div className="details-right-side">
+        <UserHeader />
+        <Blocks />
       </div>
     </div>
   );
 }
 
-export default User;
+export default UserDetails;

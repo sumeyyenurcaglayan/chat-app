@@ -1,67 +1,111 @@
-.container {
+.details-chat-container {
   width: 100%;
-  background: #e2e2e2;
-  display: flex;
-  height: 900px;
-}
-
-.left-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-
-.user-list {
-  flex: 1;
-}
-
-.message-list {
-  background-color: white;
-}
-
-#searchBar {
-  height: 700px;
-}
-
-form {
-  background-color: #4654e1;
-  width: 300px;
-  height: 44px;
-  border-radius: 5px;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  background-color: #cac8c8;
 }
 
-.avatar {
-  vertical-align: middle;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.details-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: #e5e5e5;
+  margin: 0 auto;
 }
 
-.right-side {
+.details-left-side {
+  flex: 1;
+}
+
+.details-right-side {
+  flex: 4;
+  background: white;
+}
+
+.details-left-side,
+.details-right-side {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
 }
 
-h1 {
-  display: inline;
-}
-
-.header {
+.details-header {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
+  text-align: center;
+  margin-top: 3rem;
+}
+.details-user-info {
+  flex: 4;
 }
 
-.block {
+.blocks {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-around;
+  margin: 0 auto;
+  margin-top: 1.75rem;
+  flex-direction: row;
+}
+
+.details-close {
+  width: 5rem;
+  margin-left: auto;
+  margin-top: 4rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.details-close i {
+  font-size: 40px;
+}
+
+.details-name-last {
+  margin-top: 1.5rem;
+}
+
+.details-name-last h2 {
+  margin-top: 1.5rem;
+}
+
+.message-block,
+.video-block,
+.call-block {
+  background-color: #f3f3f3;
+  width: 10rem !important;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 2rem;
+}
+
+.message-block i {
+  font-size: 32px;
+  color: #68b7ff;
+}
+
+.call-block i {
+  font-size: 32px;
+  color: #68b7ff;
+}
+
+.video-block i {
+  font-size: 32px;
+  color: #68b7ff;
+}
+
+.blocks h2 {
+  color: #68b7ff;
+  padding-top: 1rem;
+  font-weight: 400;
+}
+
+.details-name-last h2 {
+  color: #c8c8c8;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.details-name-last p {
+  font-weight: 700;
+  font-size: 18px;
 }

@@ -10,6 +10,15 @@ export default function UserHeader() {
 
   return (
     <div className="header">
+      <div
+        className="image"
+        style={{
+          width: "50px",
+          height: "50px",
+          borderRadius: "50px",
+          backgroundColor: "#C4C4C4",
+        }}
+      ></div>
       <p>{`${selectedUser.first_name} ${selectedUser.last_name}`}</p>
       <button
         onClick={() => {

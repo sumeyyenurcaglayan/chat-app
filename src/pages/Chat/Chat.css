@@ -33,38 +33,40 @@
   background-color: white;
 }
 
+.user-list {
+  background-color: #f3f3f3;
+}
+
 .user-list__user {
   cursor: pointer;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  background-color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid gray;
 }
-
-.icons svg {
-  cursor: pointer;
-  margin-right: 0.8rem !important;
-}
-
-.icons {
-  padding: 0.75rem;
+.user-list div :last-child {
+  padding-bottom: 1rem;
 }
 
 .header {
-  padding: 1.77rem;
-  background-color: #cac8c8;
+  padding: 1.3rem;
+  background-color: #f3f3f3;
   display: flex;
+  align-items: center;
 }
 
 .header p {
   margin: 0.32rem;
   font-weight: bold;
+  margin-left: 1rem;
 }
 
-.right-side-messages {
+.left-side-messages {
   width: 40%;
   margin-top: 2rem;
 }
 
-.right-side-message {
+.left-side-message {
   margin-top: 1.5rem;
   padding: 1rem;
   border: 1px solid #cac8c8;
@@ -81,14 +83,18 @@
   margin: 0.32rem;
   border-right: 1px solid gray;
   margin-right: 0.01rem;
+  padding: 0.75rem;
+  background-color: #f3f3f3;
 }
 
 .icons svg {
-  background-color: gray;
+  background-color: #d6d6d6;
   color: white;
-  margin-right: 10px;
   width: 50px;
   height: 50px;
+  padding: 0.25rem;
+  cursor: pointer;
+  margin-right: 0.8rem !important;
 }
 
 .chat-send-button {
@@ -96,30 +102,52 @@
   height: 50px;
   background-color: #68b7ff;
   border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 .chat-send-text {
   height: 40px;
   margin: 20px;
   width: 90%;
-  color: gray;
+  color: #f3f3f3;
+  padding-left: 0.25rem;
+  border: none;
+  background-color: #f3f3f3;
+}
+.chat-send-text:focus {
+  outline: none;
 }
 
 .message-input {
-  background-color: #cac8c8;
+  background-color: white;
+  border-top: gray 2px solid;
+  padding: 0.25rem;
 }
 
 .chat-search {
   border-right: 1px solid gray;
+  background-color: #f3f3f3 !important;
 }
 
 .chat-search-text {
   height: 40px;
   margin: 1.5rem;
   width: 300px;
+  padding-left: 1.5rem;
+}
+
+.chat-search-text:focus {
+  outline: none !important;
 }
 
 .header button {
   border: none;
   background: #cac8c8;
   margin-left: auto;
+  background-color: #f3f3f3;
+}
+
+.left-side-message {
+  background-color: #f3f3f3;
 }

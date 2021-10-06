@@ -15,6 +15,7 @@ export default function SearchInput(props) {
           placeholder="Search"
           onChange={handleChange}
           value={props.value}
+          style={{ backgroundColor: "#F3F3F3", border: "gainsboro 1px solid" }}
         />
       </form>
     </div>
